@@ -146,6 +146,7 @@ def Subfields():
     list=["machine learning","neural networks","vision","robotics","speech processing","natural language processing"]
     for x in list:
         print(x)
+Subfields()      
 #function to check odd or even
 def OddEven():
     num=int(input("enter your number:"))
@@ -153,6 +154,7 @@ def OddEven():
         print("The number is even")
     else:
         print("The number is odd")
+OddEven()    
 #check function to marriage is eligible
 def Eligible():
     gender=input("enter your gender(male,female)")
@@ -165,6 +167,106 @@ def Eligible():
         print("not eligible")
 
 Eligible()
+#calculate total average of 5 subjects
+def percentage():
+    sub1=int(input("enter your subject 1:"))
+    sub2=int(input("enter your subject 2:"))
+    sub3=int(input("enter your subject 3:"))
+    sub4=int(input("enter your subject 4:"))
+    sub5=int(input("enter your subject 5:"))
+    total=sub1+sub2+sub3+sub4+sub5
+    avg=total/5
+    print("subject 1: ",sub1)
+    print("subject 2: ",sub2)
+    print("subject 3: ",sub3)
+    print("subject 4: ",sub4) 
+    print("subject 5: ",sub5)
+    print("total: ",total)
+    print("average: ",avg)
+    
+percentage()
+
+#calculate area perimeter of triangle
+def triangle():
+    h=int(input("enter your height of triangle:"))
+    b=int(input("enter your breadth of triangle:"))
+    c=int(input("enter your third of triangle:"))
+    perimeter=h+b+c
+    area=0.5*h*b
+    print("area of triangle: ",area)
+    print("perimeter of triangle: ",perimeter)
+    
+triangle()
+
+#class subfieldsAI
+class SubfieldsInAi:
+    def Subfields():
+        print("Sub-fields in AI are:")
+        list=["machine learning","neural networks","vision","robotics","speech processing","natural language processing"]
+        for x in list:
+            print(x)
+         
+SubfieldsInAi.Subfields()
+#class to check odd or even
+class CheckOddEven:
+    def OddEven():
+        num=int(input("enter your number:"))
+        if num%2==0:
+            print("The number is even")
+        else:
+            print("The number is odd")
+            
+CheckOddEven.OddEven()   
+#check class to marriage is eligible
+class CheckEligible:
+    def Eligible():
+        gender=input("enter your gender(male,female)")
+        age=int(input("enter your age:"))
+        if age>21 and gender=="female":
+            print("Eligible")
+        elif age>25 and gender=="male":
+            print("eligible")
+        else:
+            print("not eligible")
+
+CheckEligible.Eligible()
+#class to calculate total average of 5 subjects
+class Calculate:
+    def percentage():
+        sub1=int(input("enter your subject 1:"))
+        sub2=int(input("enter your subject 2:"))
+        sub3=int(input("enter your subject 3:"))
+        sub4=int(input("enter your subject 4:"))
+        sub5=int(input("enter your subject 5:"))
+        total=sub1+sub2+sub3+sub4+sub5
+        avg=total/5
+        print("subject 1: ",sub1)
+        print("subject 2: ",sub2)
+        print("subject 3: ",sub3)
+        print("subject 4: ",sub4) 
+        print("subject 5: ",sub5)
+        print("total: ",total)
+        print("average: ",avg)
+    
+Calculate.percentage()
+
+#class tocalculate area perimeter of triangle
+class Triangle:
+    def calculate_area_perimeter():
+        h=int(input("enter your height of triangle:"))
+        b=int(input("enter your breadth of triangle:"))
+        c=int(input("enter your third of triangle:"))
+        perimeter=h+b+c
+        area=0.5*h*b
+        print("area of triangle: ",area)
+        print("perimeter of triangle: ",perimeter)
+    
+Triangle.calculate_area_perimeter()
+
+
+
+
+
 
 
 
