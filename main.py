@@ -263,6 +263,65 @@ class Triangle:
     
 Triangle.calculate_area_perimeter()
 
+#allfunctionclass  save this multiplefunctions.py
+class allFunction:
+    def Subfields():
+        print("Sub-fields in AI are:")
+        list=["machine learning","neural networks","vision","robotics","speech processing","natural language processing"]
+        for x in list:
+            print(x)
+         
+    def OddEven():
+        num=int(input("enter your number:"))
+        if num%2==0:
+            print("The number is even")
+        else:
+            print("The number is odd")
+
+    def Eligible():
+        gender=input("enter your gender(male,female)")
+        age=int(input("enter your age:"))
+        if age>21 and gender=="female":
+            print("Eligible")
+        elif age>25 and gender=="male":
+            print("eligible")
+        else:
+            print("not eligible")
+
+    def percentage():
+        sub1=int(input("enter your subject 1:"))
+        sub2=int(input("enter your subject 2:"))
+        sub3=int(input("enter your subject 3:"))
+        sub4=int(input("enter your subject 4:"))
+        sub5=int(input("enter your subject 5:"))
+        total=sub1+sub2+sub3+sub4+sub5
+        avg=total/5
+        print("subject 1: ",sub1)
+        print("subject 2: ",sub2)
+        print("subject 3: ",sub3)
+        print("subject 4: ",sub4) 
+        print("subject 5: ",sub5)
+        print("total: ",total)
+        print("average: ",avg)
+    
+    def calculate_area_perimeter():
+        h=int(input("enter your height of triangle:"))
+        b=int(input("enter your breadth of triangle:"))
+        c=int(input("enter your third of triangle:"))
+        perimeter=h+b+c
+        area=0.5*h*b
+        print("area of triangle: ",area)
+        print("perimeter of triangle: ",perimeter)
+    
+#call another py file
+from multiplefunctions import allFunction
+
+allFunction.Subfields()
+allFunction.OddEven()
+
+
+
+
 
 
 
